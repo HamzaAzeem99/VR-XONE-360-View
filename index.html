@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VR XONE — Immersive VR</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="brand">
+            <div class="brand-mark">VR</div>
+
+            <div>
+                <div class="brand-name">VR XONE</div>
+                <div class="brand-sub">IMMERSIVE WORLD</div>
+            </div>
+        </div>
+
+
+        <div class="nav-center">
+            360° EXPERIENCE PLATFORM
+        </div>
+
+
+        <div class="connection">
+
+            <span id="gamepadDot"></span>
+
+            <span id="gamepadStatus">
+                GAMEPAD NOT CONNECTED
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-grid"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-tag">
+                VR XONE / 001
+            </div>
+
+            <h1>
+                ENTER
+                <span>THE UNKNOWN</span>
+            </h1>
+
+            <p>
+                Explore immersive 360° worlds.
+                Control your view with mouse, keyboard
+                or gamepad.
+            </p>
+
+
+            <div class="hero-controls">
+
+                <div>
+                    <span class="control-key">MOUSE</span>
+                    <small>DRAG TO LOOK</small>
+                </div>
+
+                <div>
+                    <span class="control-key">ARROWS</span>
+                    <small>CAMERA CONTROL</small>
+                </div>
+
+                <div>
+                    <span class="control-key">GAMEPAD</span>
+                    <small>LEFT STICK</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VIEWER ================= -->
+
+    <main>
+
+        <section class="viewer-section">
+
+            <div class="section-top">
+
+                <div>
+
+                    <span class="section-label">
+                        CURRENT EXPERIENCE
+                    </span>
+
+                    <h2 id="viewerTitle">
+                        Loading...
+                    </h2>
+
+                </div>
+
+
+                <div class="vr-badge">
+
+                    <span></span>
+
+                    360° VR
+
+                </div>
+
+            </div>
+
+
+            <div class="viewer-wrapper">
+
+                <div id="player"></div>
+
+
+                <!-- DRAG CONTROL -->
+
+                <div id="dragLayer">
+
+                    <div id="dragMessage">
+
+                        <div class="drag-icon">
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                        </div>
+
+                        <span>
+                            DRAG TO EXPLORE
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOADING -->
+
+                <div id="loading" class="loading">
+
+                    <div class="loader"></div>
+
+                    <span>
+                        INITIALIZING EXPERIENCE
+                    </span>
+
+                </div>
+
+
+                <!-- VIEWER HUD -->
+
+                <div class="viewer-hud">
+
+                    <div class="hud-left">
+
+                        <span class="hud-dot"></span>
+
+                        LIVE VR
+
+                    </div>
+
+
+                    <div class="hud-center">
+
+                        DRAG / ARROWS / GAMEPAD
+
+                    </div>
+
+
+                    <div class="hud-right">
+
+                        <span id="cameraYaw">
+                            YAW 000°
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTROLS -->
+
+                <div class="viewer-controls">
+
+                    <button id="playBtn">
+                        PLAY
+                    </button>
+
+                    <button id="pauseBtn">
+                        PAUSE
+                    </button>
+
+                    <button id="resetBtn">
+                        RESET VIEW
+                    </button>
+
+                    <button id="fullscreenBtn">
+                        FULLSCREEN
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFO -->
+
+            <div class="experience-info">
+
+                <div>
+
+                    <span id="infoCategory">
+                        VR EXPERIENCE
+                    </span>
+
+                    <h3 id="infoTitle">
+                        Loading...
+                    </h3>
+
+                </div>
+
+
+                <p id="infoDescription">
+                    Loading experience description...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="category-section">
+
+            <div class="category-header">
+
+                <div>
+
+                    <span class="section-label">
+                        DISCOVER
+                    </span>
+
+                    <h2>
+                        CHOOSE YOUR WORLD
+                    </h2>
+
+                </div>
+
+
+                <div class="experience-counter">
+
+                    <span id="experienceCount">
+                        0
+                    </span>
+
+                    EXPERIENCES
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="categoryTabs"
+                class="category-tabs"
+            >
+                <!-- JS -->
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORY CONTENT ================= -->
+
+        <section
+            id="categorySections"
+            class="category-sections"
+        >
+            <!-- JS generated -->
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-brand">
+            VR XONE
+        </div>
+
+        <div class="footer-center">
+            IMMERSIVE 360° EXPERIENCES
+        </div>
+
+        <div class="footer-right">
+            V2.0
+        </div>
+
+    </footer>
+
+
+    <!-- YOUTUBE API -->
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
